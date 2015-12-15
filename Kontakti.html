@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<link rel="shortcut icon" href="favicon.png" type="image/png"/>
+<meta charset="UTF-8">
+<script src="./lib/jquery-2.1.4.min.js"></script>
+<link rel="stylesheet" href="./css/html5-reset.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="./lib/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="./lib/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="./lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="Script.js"></script>
+<style type="text/css">
+	
+body { 
+  background: url(star2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+header.row{
+background: url(AndromedaX.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}	
+
+nav ul li {
+	list-style-type: none;
+	display: inline;
+	color:#000000;}
+	
+main, nav{
+	background-color: #FFFF66; <!-- dzeltana -->
+	padding:20px;
+}
+
+.navbar{
+	margin-bottom: 0px;
+	padding:0px;
+}
+
+ .navbar-collapse{
+background-color: #FFFF66}
+
+.navbar-inverse, .navbar-inverse .navbar-form{
+	background-color: #FFFF66; <!-- 300066 -->
+	margin: 0px;
+	border:0px;
+	border-color:#FFFF66;
+}
+
+.navbar-inverse{
+	border-color:#FFFF66;
+	background-color: #FFFF66;
+}
+	
+.navbar-inverse .navbar-nav>li>a{ <!-- izgriezts=navbar-brand -->
+	text-shadow: none;
+	color:#000000;
+	background-color: #FFFF66;  <!-- -->
+}
+
+.navbar-inverse {
+	text-shadow: none;
+	color:#00ff00;
+	background-color: #FFFF66;}
+
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a{
+	background-color: #FFFF66;
+	color:#FFFF66;
+}
+
+
+ .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+	background-color: #26004d; <!--toggle krāsas -->
+	color:#ffffff;	
+}
+
+
+.navbar-header{
+	background-color: #FFFF66;
+	<!-- color:#00ff00;	 -->
+}
+
+.navbar-inverse .navbar-toggle{
+	border:0px;
+	background-color: #b266ff; <!-- samazināšanas pogas krāsa -->
+	
+}
+	
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus {
+      color: #FFFF66;
+      background: #300066;
+      text-decoration: none;
+      text-shadow:none;
+      -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+	  box-shadow: none;
+	  font-weight: bold;
+
+}
+		
+		hr{color: #FFFFFF}
+		h3{ color: #FFFFFF}
+		p{ color: #FFFFFF}
+		a{ color: #FFFFFF}
+		td{ color: #FFFFFF}
+		th{ color: #FFFFFF}
+
+
+.btn-sample { 
+  color: #ffffff; 
+  background-color: #611BBD; 
+  border-color: #ff9900; 
+} 
+ 
+.btn-sample:hover, 
+.btn-sample:focus, 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  color: #611BBD; 
+  background-color: #ff9900; 
+  border-color: #611BBD; 
+} 
+ 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  background-image: none; 
+} 
+ 
+
+ 
+.btn-sample .badge { 
+  color: #611BBD; 
+  background-color: #ffffff; 
+}
+
+div.modal-body{
+background-color: #9966ff;
+color: #ffffff;
+}
+
+
+button.close {color:#ff0000}
+
+
+div#izvelne.collapse.navbar-collapse {
+background-color: #ff9900}
+
+a.navbar-brand{
+background-color: #ff9900;
+color:#611BBD }
+		
+	</style>
+<title>
+Kontakti
+</title>
+</head>
+
+<body>
+<section class="container-fluid">
+
+<header class="row">
+<div class="col-md-12">
+<img src="logo.png" height="75">
+</div>
+
+<div class="container">
+<!-- Trigger the modal with a button -->
+  <button type="button" style="position: absolute; right:100px;" class="btn btn-sample" data-toggle="modal" data-target="#myModal">Reģistrācija</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#611BBD">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h1 class="modal-title" style="color:#ff9900">Reģistrēšanās</h1>
+        </div>
+        <div class="modal-body">
+		
+		<form>
+		<h4>Ievadiet vārdu un uzvārdu un kontakttalruņa numuru</h4>
+		Vārds:
+		<input type="text" name="Vārds" style="position: absolute; left:120px; color:#000000">
+		</form>
+		<br>
+		
+		<form>
+		Uzvārds:
+		<input type="text" name="Uzvārds" style="position: absolute; left:120px; color:#000000">
+		</form>
+		<br>
+		
+		<form>
+		Telefona Nr:
+		<input type="text" name="Uzvārds" style="position: absolute; left:120px; color:#000000">
+		</form>
+		<br>
+		
+		
+		<h4>Izvēlieties jūsu dzimumu</h4>
+
+<form>
+<input list="Dzimums" style="width:75px; position: absolute; left:120px; color:#000000">
+  <datalist id="Dzimums">
+    <option value="Sieviešu">
+    <option value="Vīriešu">
+  </datalist>
+</form>
+<br>
+
+<h4>Ievadiet paroli</h4>
+
+<form>
+Parole:
+<input type="password" style="position: absolute; left:120px; color:#000000">
+</form>
+<br>
+
+<form>
+Atkārtojiet paroli:
+<input type="password" style="position: absolute; left:120px; color:#000000">
+</form>
+<br>
+
+<h4>Vai gribat saņemt uz e-pastu paziņojumu par jaunumiem?</h4>
+
+<form style="position: relative; left:120px">
+<input type="radio" name="Jaunumi" value="Jā" >Jā
+<br>
+<input type="radio" name="Jaunumi" value="Nē">Nē
+</form>
+<br>
+
+<h4>Kādu personisko informāciju jūs vēlaties, lai citi lietotāji redz?</h4>
+<form style="position: relative; left:120px">
+<input type="checkbox">Dzimums
+<br>
+<input type="checkbox">e-pasts
+<br>
+<input type="checkbox">Telefona numurs
+</form>
+<br>
+
+<button type="button" class="btn btn-sample" style="position: relative; left:220px">Reģistrēties</button>
+		
+        </div>
+        <div class="modal-footer" style="background-color: #611BBD">
+          <button type="button" class="btn btn-sample" data-dismiss="modal">Atcelt</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</header>
+
+<div class="row">
+	<div class="col-md-12">
+		<nav class="navbar navbar-inverse">
+				<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#izvelne">
+					<span class="icon-bar "></span>
+					<span class="icon-bar "></span>
+					<span class="icon-bar "></span>
+				</button>
+				<a class="navbar-brand" href="index1.html" >majaslapa.lv</a>
+				</div>
+				<div class="collapse navbar-collapse" id="izvelne">
+						<ul class="nav navbar-nav">
+							<li id="1elements"><a id="1teksts" href="galerija.html">Galerija</a></li>
+							<li id="2elements"><a id="2teksts" href="Anketa.html">Anketa</a></li>
+							<li id="3elements"><a id="3teksts" href="Kontakti.html">Kontakti</a></li>
+						</ul>
+			</nav>
+		</div>
+</div>
+</div>
+
+<section class="row">
+	<aside class="col-md-4">
+	<h1 color="#ffff00">teksts</h1>
+	</aside>
+	
+<main class="col-md-4" style="background-color:#a54dff">
+
+	
+	<h1 style="width:150px">Autors</h1>
+	<p style="width:150px">Valentīns Dementjevs</p>
+	<img src="Autors.jpg" style="width:200px; height:200px; position relative; right:100px">
+	<br>
+	
+	<h1 style="width:150px">e-pasts</h1>
+	<p style="width:150px">val112@inbox</p>
+	<br>
+	
+	<h1>Telefona Nr.</h1>
+	<p>XXXXXXXX</p>
+	<br>
+	
+	<h1>Adrese</h1>
+	<p>Rīga, Maskavas iela 85</p>
+	
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2176.538215387937!2d24.136563516029018!3d56.939579607303386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eece27ba41de17%3A0x3808d5fecd662ad7!2sMaskavas+iela+85%2C+Latgales+priek%C5%A1pils%C4%93ta%2C+R%C4%ABga%2C+LV-1003!5e0!3m2!1sen!2slv!4v1450110906949"
+	width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>	
+</main>
+
+
+<aside class="col-md-4">
+<h1 color="#ffff00">teksts</h1>
+</aside>
+</section>
+
+<footer class="col-md-12" style="background-color:#ff9900">
+<p>Grupa: D3-2</p>
+<p>e-pasts: val112@inbox</p>
+</footer>
+
+</section>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

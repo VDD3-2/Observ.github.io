@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html lang="lv">
+<head>
+
+	<link rel="shortcut icon" href="favicon.png" type="image/png"/>
+	<meta charset="UTF-8">
+	<script src="./lib/jquery-2.1.4.min.js"></script>
+	<link rel="stylesheet" href="./css/html5-reset.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="./lib/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="./lib/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="./lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="Script.js"></script>
+	<script type="text/javascript" src="fb/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+	<link href="fb/source/jquery.fancybox.css" rel="stylesheet">
+	<script type="text/javascript" src="fb/source/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$(".fancybox").fancybox({autoPlay:true, playSpeed:4000,
+		
+		
+		});
+	})
+	
+	
+	</script>
+	<style type="text/css">
+	
+body { 
+  background: url(star2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header.row{
+background: url(AndromedaX.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline;
+	color:#000000;}
+	
+main, nav{
+	background-color: #FFFF66; <!-- dzeltana -->
+	padding:20px;
+}
+
+.navbar{
+	margin-bottom: 0px;
+	padding:0px;
+}
+
+ .navbar-collapse{
+background-color: #FFFF66}
+
+.navbar-inverse, .navbar-inverse .navbar-form{
+	background-color: #FFFF66; <!-- 300066 -->
+	margin: 0px;
+	border:0px;
+	border-color:#FFFF66;
+}
+
+.navbar-inverse{
+	border-color:#FFFF66;
+	background-color: #FFFF66;
+}
+	
+.navbar-inverse .navbar-nav>li>a{ <!-- izgriezts=navbar-brand -->
+	text-shadow: none;
+	color:#000000;
+	background-color: #FFFF66;  <!-- -->
+}
+
+.navbar-inverse {
+	text-shadow: none;
+	color:#00ff00;
+	background-color: #FFFF66;}
+
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.open>a{
+	background-color: #FFFF66;
+	color:#FFFF66;
+}
+
+
+ .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
+	background-color: #26004d; <!--toggle krāsas -->
+	color:#ffffff;	
+}
+
+
+.navbar-header{
+	background-color: #FFFF66;
+	<!-- color:#00ff00;	 -->
+}
+
+.navbar-inverse .navbar-toggle{
+	border:0px;
+	background-color: #b266ff; <!-- samazināšanas pogas krāsa -->
+	
+}
+	
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus {
+      color: #FFFF66;
+      background: #300066;
+      text-decoration: none;
+      text-shadow:none;
+      -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+	  box-shadow: none;
+	  font-weight: bold;
+}
+
+.btn-sample { 
+  color: #ffffff; 
+  background-color: #611BBD; 
+  border-color: #ff9900; 
+} 
+ 
+.btn-sample:hover, 
+.btn-sample:focus, 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  color: #611BBD; 
+  background-color: #ff9900; 
+  border-color: #611BBD; 
+} 
+ 
+.btn-sample:active, 
+.btn-sample.active, 
+.open .dropdown-toggle.btn-sample { 
+  background-image: none; 
+} 
+ 
+
+ 
+.btn-sample .badge { 
+  color: #611BBD; 
+  background-color: #ffffff; 
+}
+
+div.modal-body{
+background-color: #9966ff;
+color: #ffffff;
+}
+
+
+button.close {color:#ff0000}
+
+
+div#izvelne.collapse.navbar-collapse {
+background-color: #ff9900}
+
+a.navbar-brand{
+background-color: #ff9900;
+color:#611BBD }
+
+
+	</style>
+	
+
+	
+<title>
+Galerija
+</title>
+
+<link rel="shortcut icon" href="favicon.png" type="image/png"/>
+
+</head>
+
+<body>
+<section class="container-fluid">
+
+<header class="row">
+<div class="col-md-12">
+<img src="logo.png" height="75">
+</div>
+
+<div class="container">
+<!-- Trigger the modal with a button -->
+  <button type="button" style="position: absolute; right:100px;" class="btn btn-sample" data-toggle="modal" data-target="#myModal">Reģistrācija</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="background-color:#611BBD">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h1 class="modal-title" style="color:#ff9900">Reģistrēšanās</h1>
+        </div>
+        <div class="modal-body">
+		
+		<form>
+		<h4>Ievadiet vārdu un uzvārdu un kontakttalruņa numuru</h4>
+		Vārds:
+		<input type="text" name="Vārds" style="position: absolute; left:120px; color:#000000">
+		</form>
+		<br>
+		
+		<form>
+		Uzvārds:
+		<input type="text" name="Uzvārds" style="position: absolute; left:120px; color:#000000">
+		</form>
+		<br>
+		
+		<form>
+		Telefona Nr:
+		<input type="text" name="Numurs" style="position: absolute; left:120px; color:#000000">
+		</form>
+		<br>
+		
+		
+		<h4>Izvēlieties jūsu dzimumu</h4>
+
+<form>
+<input list="Dzimums" style="width:75px; position: absolute; left:120px; color:#000000">
+  <datalist id="Dzimums">
+    <option value="Sieviešu">
+    <option value="Vīriešu">
+  </datalist>
+</form>
+<br>
+
+<h4>Ievadiet paroli</h4>
+
+<form>
+Parole:
+<input type="password" style="position: absolute; left:120px; color:#000000">
+</form>
+<br>
+
+<form>
+Atkārtojiet paroli:
+<input type="password" style="position: absolute; left:120px; color:#000000">
+</form>
+<br>
+
+<h4>Vai gribat saņemt uz e-pastu paziņojumu par jaunumiem?</h4>
+
+<form style="position: relative; left:120px">
+<input type="radio" name="Jaunumi" value="Jā" >Jā
+<br>
+<input type="radio" name="Jaunumi" value="Nē">Nē
+</form>
+<br>
+
+<h4>Kādu personisko informāciju jūs vēlaties, lai citi lietotāji redz?</h4>
+<form style="position: relative; left:120px">
+<input type="checkbox">Dzimums
+<br>
+<input type="checkbox">e-pasts
+<br>
+<input type="checkbox">Telefona numurs
+</form>
+<br>
+
+<button type="button" class="btn btn-sample" style="position: relative; left:220px">Reģistrēties</button>
+		
+        </div>
+        <div class="modal-footer" style="background-color: #611BBD">
+          <button type="button" class="btn btn-sample" data-dismiss="modal">Atcelt</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</header>
+
+	<div class="row">
+		<div class="col-md-12">
+			<nav class="navbar navbar-inverse">
+				<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#izvelne">
+					<span class="icon-bar "></span>
+					<span class="icon-bar "></span>
+					<span class="icon-bar "></span>
+				</button>
+				<a class="navbar-brand" href="index1.html" >majaslapa.lv</a>
+				</div>
+				<div class="collapse navbar-collapse" id="izvelne">
+						<ul class="nav navbar-nav">
+							<li id="1elements"><a id="1teksts" href="galerija.html">Galerija</a></li>
+							<li id="2elements"><a id="2teksts" href="Anketa.html">Anketa</a></li>
+							<li id="3elements"><a id="3teksts" href="Kontakti.html">Kontakti</a></li>
+						</ul>
+			</nav>
+		</div>
+</div>
+</div>
+
+<br>
+
+<section class="row">
+
+	<aside class="col-md-3">
+	<h1 color="#ffff00">teksts</h1>
+	</aside>
+	
+<main class="col-md-6" style="background-color:#a54dff">
+
+<h1 style="color:black;" align="center">Saules sistēmas debess ķermeņi</h1>
+<div id="galerija1" align="center">
+	<a href="moon.jpg" class="fancybox" rel="galerija1"><img style="border:10px outset #ffffcc;" src="moon.jpg" height="100" width="100"></a>
+
+	<a href="mars.jpg" class="fancybox" rel="galerija1"><img style="border:10px outset #ff9933;" src="mars.jpg" height="100" width="100"></a>
+
+	<a href="Venus.jpg" class="fancybox" rel="galerija1"><img style="border:10px outset #ffdab3" src="Venus.jpg" height="100" width="100"></a>
+
+	<a href="uranus.jpg" class="fancybox" rel="galerija1"> <img style="border:10px outset #66ccff" src="uranus.jpg" width="100" height="100"></a>
+</div>	
+<br>
+
+
+<h1 align="center" style="color:black">Citi sastopamie dabes ķermeņi un parādības</h1>
+<div id="galerija2" align="center">
+	<a href="Comet.jpg" class="fancybox" rel="galerija2"> <img style="border:10px outset #e6e6e6" src="Comet.jpg" width="100" height="100"></a>
+
+	<a href="asteroid.jpg" class="fancybox" rel="galerija2"> <img style="border:10px outset #bfbfbf" src="asteroid.jpg" width="100" height="100"></a>
+
+	<a href="nyan.jpeg" class="fancybox" rel="galerija2"> <img style="border:10px outset #3D9966" src="nyan.jpeg" width="100" height="100"></a>
+	
+	<a href="black-hole.jpg" class="fancybox" rel="galerija2"> <img style="border:10px outset #99004b" src="black-hole.jpg" width="100" height="100"></a>
+</div>
+	
+<h1 align="center" style="color:black">Galaktikas</h1>
+<div id="galerija3" align="center">
+	<a href="Andromeda2.jpg" class="fancybox" rel="galerija3"> <img style="border:10px outset #FF5900" src="Andromeda2.jpg" width="100" height="100"></a>
+	
+	<a href="Black-eye.jpg" class="fancybox" rel="galerija3"> <img style="border:10px outset #4d4d4d" src="Black-eye.jpg" width="100" height="100"></a>
+
+	<a href="Sunflower.jpg" class="fancybox" rel="galerija3"> <img style="border:10px outset #e4e600" src="Sunflower.jpg" width="100" height="100"></a>
+	
+	<a href="milky.jpg" class="fancybox" rel="galerija3"> <img style="border:10px outset #ffcce6" src="milky.jpg" width="100" height="100"></a>
+</div>
+
+	
+</main>
+
+<aside class="col-md-3">
+<h1 color="#ffff00">teksts</h1>
+</aside>
+</section>
+
+
+<footer class="col-md-12" style="background-color:#ff9900">
+<p>Grupa: D3-2</p>
+<p>e-pasts: val112@inbox</p>
+</footer>
+
+
+</body>
+
+</html>
